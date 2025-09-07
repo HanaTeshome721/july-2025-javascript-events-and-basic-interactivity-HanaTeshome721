@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Web Page Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1> Interactive Web Page</h1>
+    <button id="theme-toggle">Toggle Dark Mode</button>
+  </header>
+
+  <!-- Part 1: Event Handling Demo -->
+  <section>
+    <h2>Counter Game</h2>
+    <p>Click the button to increase the count:</p>
+    <button id="counter-btn">Count: <span id="count">0</span></button>
+  </section>
+
+  <!-- Part 2: Interactive Element -->
+  <section>
+    <h2> FAQ Section</h2>
+    <div class="faq">
+      <button class="faq-question">What is JavaScript?</button>
+      <p class="faq-answer">JavaScript is a programming language that makes web pages interactive.</p>
+    </div>
+    <div class="faq">
+      <button class="faq-question">What is DOM?</button>
+      <p class="faq-answer">The Document Object Model (DOM) represents the page so programs can change it.</p>
+    </div>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section>
+    <h2> Registration Form</h2>
+    <form id="register-form" novalidate>
+      <label>
+        Name:
+        <input type="text" id="name" required />
+        <span class="error" id="name-error"></span>
+      </label>
+      <label>
+        Email:
+        <input type="email" id="email" required />
+        <span class="error" id="email-error"></span>
+      </label>
+      <label>
+        Password:
+        <input type="password" id="password" required />
+        <span class="error" id="password-error"></span>
+      </label>
+      <button type="submit">Register</button>
+      <p id="form-success" class="success"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
